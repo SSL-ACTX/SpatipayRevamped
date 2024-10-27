@@ -25,7 +25,7 @@ const SignupScreen = () => {
             />
 
             <Text style={styles.welcomeText}>Welcome</Text>
-            <Text style={styles.signInText}>Sign in to continue</Text>
+            <Text style={styles.signInText}>Sign up to create an account</Text>
 
             {/* Username Input */}
             <View style={styles.inputContainer}>
@@ -62,7 +62,7 @@ const SignupScreen = () => {
 
             {/* Login Button */}
             <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('HomeScreen')}>
-                <Text style={styles.loginButtonText}>Sign In</Text>
+                <Text style={styles.loginButtonText}>Sign Up</Text>
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
