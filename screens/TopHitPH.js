@@ -29,21 +29,23 @@ const AlbumScreen = () => {
         </View>
       </ImageBackground>
 
-      <View style={styles.songList}>
-        {songData.map((song, index) => (
-          <TouchableOpacity key={index} style={styles.songItem}>
-            <View style={styles.songInfo}>
-              <Text style={[styles.songTitle, song.title === 'Mundo' ? styles.highlightedSongTitle : null]}>{song.title}</Text>
-              <Text style={styles.songArtist}>{song.artist}</Text>
-            </View>
-            <View style={styles.songActions}>
-              <Ionicons name="play-outline" size={20} color="white" />
-              <Text>     </Text>
-              <Ionicons name="heart-outline" size={20} color="#1db954" />
-            </View>
-          </TouchableOpacity>
-        ))}
-      </View>
+      <ScrollView>
+        <View style={styles.songList}>
+          {songData.map((song, index) => (
+            <TouchableOpacity key={index} style={styles.songItem}>
+              <View style={styles.songInfo}>
+                <Text style={[styles.songTitle, song.title === 'Mundo' ? styles.highlightedSongTitle : null]}>{song.title}</Text>
+                <Text style={styles.songArtist}>{song.artist}</Text>
+              </View>
+              <View style={styles.songActions}>
+                <Ionicons name="play-outline" size={20} color="white" />
+                <Text>     </Text>
+                <Ionicons name="heart-outline" size={20} color="#1db954" />
+              </View>
+            </TouchableOpacity>
+          ))}
+        </View>
+      </ScrollView>
 
       {/* Footer */}
       <View style={styles.footer}>

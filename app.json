@@ -2,7 +2,7 @@
   "expo": {
     "name": "SpatipayRevamped",
     "slug": "SpatipayRevamped",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "orientation": "portrait",
     "icon": "./assets/spatipay.png",
     "userInterfaceStyle": "dark",
@@ -16,13 +16,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/spatipay.png",
+        "backgroundColor": "#000"
       },
       "package": "com.seuriin.SpatipayRevamped"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/spatipay.png"
     },
     "extra": {
       "eas": {
